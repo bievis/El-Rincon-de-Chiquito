@@ -37,6 +37,16 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         localPlayer = AVQueuePlayer.init()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
     // Metodos del TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
