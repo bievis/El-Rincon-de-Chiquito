@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */; };
-		F1E0864E1FEE742A006C35A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864D1FEE742A006C35A8 /* ViewController.swift */; };
+		F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */; };
 		F1E086511FEE742A006C35A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0864F1FEE742A006C35A8 /* Main.storyboard */; };
 		F1E086541FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1E086521FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld */; };
-		F1E086561FEE742A006C35A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E086551FEE742A006C35A8 /* Assets.xcassets */; };
 		F1E086591FEE742A006C35A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E086571FEE742A006C35A8 /* LaunchScreen.storyboard */; };
+		F1E086651FEEADB1006C35A8 /* SonidosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E086641FEEADB1006C35A8 /* SonidosViewController.swift */; };
+		F1E086671FEED9E8006C35A8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E086661FEED9E8006C35A8 /* Media.xcassets */; };
+		F1E0866B1FEEE0F5006C35A8 /* sonido.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E0866A1FEEE0F4006C35A8 /* sonido.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1E086481FEE742A006C35A8 /* El Rincon de Chiquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Rincon de Chiquito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1E0864D1FEE742A006C35A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F1E086501FEE742A006C35A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1E086531FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = El_Rincon_de_Chiquito.xcdatamodel; sourceTree = "<group>"; };
-		F1E086551FEE742A006C35A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E086581FEE742A006C35A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E0865A1FEE742A006C35A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E086641FEEADB1006C35A8 /* SonidosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonidosViewController.swift; sourceTree = "<group>"; };
+		F1E086661FEED9E8006C35A8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F1E0866A1FEEE0F4006C35A8 /* sonido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonido.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */,
-				F1E0864D1FEE742A006C35A8 /* ViewController.swift */,
+				F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */,
+				F1E086641FEEADB1006C35A8 /* SonidosViewController.swift */,
 				F1E0864F1FEE742A006C35A8 /* Main.storyboard */,
-				F1E086551FEE742A006C35A8 /* Assets.xcassets */,
 				F1E086571FEE742A006C35A8 /* LaunchScreen.storyboard */,
 				F1E0865A1FEE742A006C35A8 /* Info.plist */,
 				F1E086521FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld */,
+				F1E086661FEED9E8006C35A8 /* Media.xcassets */,
+				F1E0866A1FEEE0F4006C35A8 /* sonido.png */,
 			);
 			path = "El Rincon de Chiquito";
 			sourceTree = "<group>";
@@ -127,7 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E086591FEE742A006C35A8 /* LaunchScreen.storyboard in Resources */,
-				F1E086561FEE742A006C35A8 /* Assets.xcassets in Resources */,
+				F1E0866B1FEEE0F5006C35A8 /* sonido.png in Resources */,
+				F1E086671FEED9E8006C35A8 /* Media.xcassets in Resources */,
 				F1E086511FEE742A006C35A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E0864E1FEE742A006C35A8 /* ViewController.swift in Sources */,
+				F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */,
 				F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */,
+				F1E086651FEEADB1006C35A8 /* SonidosViewController.swift in Sources */,
 				F1E086541FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
