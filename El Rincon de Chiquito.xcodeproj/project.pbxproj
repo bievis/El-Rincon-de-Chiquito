@@ -22,6 +22,9 @@
 		F1E086751FF3AF26006C35A8 /* Chiquitazo_comorrr.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E086741FF3AF26006C35A8 /* Chiquitazo_comorrr.png */; };
 		F1E086781FF3B977006C35A8 /* foto_menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E086771FF3B977006C35A8 /* foto_menu.jpg */; };
 		F1E0867A1FF3BCDB006C35A8 /* boton.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E086791FF3BCDB006C35A8 /* boton.png */; };
+		F1E0867C1FF3C80E006C35A8 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E0867B1FF3C80E006C35A8 /* icon-144.png */; };
+		F1E0867E1FF3C829006C35A8 /* QuijoteApps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E0867D1FF3C829006C35A8 /* QuijoteApps.jpg */; };
+		F1E086801FF3C88D006C35A8 /* CompartirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		F1E086741FF3AF26006C35A8 /* Chiquitazo_comorrr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chiquitazo_comorrr.png; sourceTree = "<group>"; };
 		F1E086771FF3B977006C35A8 /* foto_menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foto_menu.jpg; sourceTree = "<group>"; };
 		F1E086791FF3BCDB006C35A8 /* boton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton.png; sourceTree = "<group>"; };
+		F1E0867B1FF3C80E006C35A8 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-144.png"; sourceTree = "<group>"; };
+		F1E0867D1FF3C829006C35A8 /* QuijoteApps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QuijoteApps.jpg; sourceTree = "<group>"; };
+		F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompartirViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 				F1E0865A1FEE742A006C35A8 /* Info.plist */,
 				F1E086521FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld */,
 				F1E086661FEED9E8006C35A8 /* Media.xcassets */,
+				F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */,
 			);
 			path = "El Rincon de Chiquito";
 			sourceTree = "<group>";
@@ -90,6 +97,8 @@
 		F1E086761FF3B8B4006C35A8 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				F1E0867D1FF3C829006C35A8 /* QuijoteApps.jpg */,
+				F1E0867B1FF3C80E006C35A8 /* icon-144.png */,
 				F1E086791FF3BCDB006C35A8 /* boton.png */,
 				F1E086771FF3B977006C35A8 /* foto_menu.jpg */,
 				F1E0866A1FEEE0F4006C35A8 /* sonido.png */,
@@ -163,6 +172,8 @@
 			files = (
 				F1E086701FF269F1006C35A8 /* risa_3.png in Resources */,
 				F1E086591FEE742A006C35A8 /* LaunchScreen.storyboard in Resources */,
+				F1E0867E1FF3C829006C35A8 /* QuijoteApps.jpg in Resources */,
+				F1E0867C1FF3C80E006C35A8 /* icon-144.png in Resources */,
 				F1E0866B1FEEE0F5006C35A8 /* sonido.png in Resources */,
 				F1E0867A1FF3BCDB006C35A8 /* boton.png in Resources */,
 				F1E086671FEED9E8006C35A8 /* Media.xcassets in Resources */,
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */,
+				F1E086801FF3C88D006C35A8 /* CompartirViewController.swift in Sources */,
 				F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */,
 				F1E086651FEEADB1006C35A8 /* SonidosViewController.swift in Sources */,
 				F1E086541FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld in Sources */,
