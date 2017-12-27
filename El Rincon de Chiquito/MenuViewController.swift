@@ -45,10 +45,10 @@ class MenuViewController: UIViewController {
             objSonidosView.menuChoice = 0
             
             if boton.titleLabel?.text == "Chistes" {
-                objSonidosView.menuChoice = 1
+                objSonidosView.menuChoice = 2
             }
             else if boton.titleLabel?.text == "Sonidos" {
-                objSonidosView.menuChoice = 2
+                objSonidosView.menuChoice = 1
             }
         
         }

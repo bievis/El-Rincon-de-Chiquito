@@ -80,8 +80,8 @@
 		F1E0864A1FEE742A006C35A8 /* El Rincon de Chiquito */ = {
 			isa = PBXGroup;
 			children = (
-				F1E086761FF3B8B4006C35A8 /* Imagenes */,
 				F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */,
+				F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */,
 				F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */,
 				F1E086641FEEADB1006C35A8 /* SonidosViewController.swift */,
 				F1E0864F1FEE742A006C35A8 /* Main.storyboard */,
@@ -89,7 +89,7 @@
 				F1E0865A1FEE742A006C35A8 /* Info.plist */,
 				F1E086521FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld */,
 				F1E086661FEED9E8006C35A8 /* Media.xcassets */,
-				F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */,
+				F1E086761FF3B8B4006C35A8 /* Imagenes */,
 			);
 			path = "El Rincon de Chiquito";
 			sourceTree = "<group>";
