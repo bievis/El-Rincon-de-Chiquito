@@ -25,6 +25,9 @@
                                 <state key="normal" title="Videos" backgroundImage="boton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="I51-mT-uC6" kind="show" id="tRp-fF-Ffj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4N-Xt-UxA">
                                 <rect key="frame" x="5" y="225" width="180" height="170"/>
@@ -98,6 +101,31 @@
             </objects>
             <point key="canvasLocation" x="1228" y="112.89355322338831"/>
         </scene>
+        <!--Player View Controller-->
+        <scene sceneID="6Cn-QU-lsm">
+            <objects>
+                <viewController id="I51-mT-uC6" customClass="PlayerViewController" customModule="El_Rincon_de_Chiquito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cdm-gO-CrO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-3J-IRQ" customClass="YTPlayerView">
+                                <rect key="frame" x="16" y="35" width="343" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iLV-Gk-1XU"/>
+                    </view>
+                    <connections>
+                        <outlet property="youtubePlayer" destination="PtU-3J-IRQ" id="h6V-pQ-wfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bv-z2-8gW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318" y="208"/>
+        </scene>
         <!--Compartir View Controller-->
         <scene sceneID="nZu-mu-6QR">
             <objects>
@@ -139,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsI-Wd-T13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2317.5999999999999" y="533.88305847076469"/>
+            <point key="canvasLocation" x="1686" y="927"/>
         </scene>
         <!--Sonidos View Controller-->
         <scene sceneID="Dku-pb-fUu">
@@ -193,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkv-hz-8fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="-181"/>
+            <point key="canvasLocation" x="1954" y="-591"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cI0-2t-Wa0">

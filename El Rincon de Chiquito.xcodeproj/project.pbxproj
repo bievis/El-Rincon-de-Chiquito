@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F150A0E41FF425BC009DAFCB /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E31FF425BC009DAFCB /* YTPlayerView.m */; };
+		F150A0E61FF4260C009DAFCB /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F150A0E51FF4260C009DAFCB /* Assets */; };
+		F150A0E81FF42883009DAFCB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E71FF42883009DAFCB /* PlayerViewController.swift */; };
 		F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */; };
 		F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */; };
 		F1E086511FEE742A006C35A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0864F1FEE742A006C35A8 /* Main.storyboard */; };
@@ -28,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F150A0E11FF425BA009DAFCB /* El Rincon de Chiquito-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "El Rincon de Chiquito-Bridging-Header.h"; sourceTree = "<group>"; };
+		F150A0E21FF425BB009DAFCB /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		F150A0E31FF425BC009DAFCB /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		F150A0E51FF4260C009DAFCB /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		F150A0E71FF42883009DAFCB /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		F1E086481FEE742A006C35A8 /* El Rincon de Chiquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Rincon de Chiquito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 			children = (
 				F1E0864A1FEE742A006C35A8 /* El Rincon de Chiquito */,
 				F1E086491FEE742A006C35A8 /* Products */,
+				F150A0E21FF425BB009DAFCB /* YTPlayerView.h */,
+				F150A0E31FF425BC009DAFCB /* YTPlayerView.m */,
+				F150A0E11FF425BA009DAFCB /* El Rincon de Chiquito-Bridging-Header.h */,
+				F150A0E51FF4260C009DAFCB /* Assets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +95,7 @@
 				F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */,
 				F1E0867F1FF3C88D006C35A8 /* CompartirViewController.swift */,
 				F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */,
+				F150A0E71FF42883009DAFCB /* PlayerViewController.swift */,
 				F1E086641FEEADB1006C35A8 /* SonidosViewController.swift */,
 				F1E0864F1FEE742A006C35A8 /* Main.storyboard */,
 				F1E086571FEE742A006C35A8 /* LaunchScreen.storyboard */,
@@ -97,10 +110,10 @@
 		F1E086761FF3B8B4006C35A8 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				F1E086771FF3B977006C35A8 /* foto_menu.jpg */,
 				F1E0867D1FF3C829006C35A8 /* QuijoteApps.jpg */,
 				F1E0867B1FF3C80E006C35A8 /* icon-144.png */,
 				F1E086791FF3BCDB006C35A8 /* boton.png */,
-				F1E086771FF3B977006C35A8 /* foto_menu.jpg */,
 				F1E0866A1FEEE0F4006C35A8 /* sonido.png */,
 				F1E0866C1FF269F1006C35A8 /* risa_1.png */,
 				F1E0866E1FF269F1006C35A8 /* risa_2.png */,
@@ -143,6 +156,7 @@
 				TargetAttributes = {
 					F1E086471FEE742A006C35A8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +197,7 @@
 				F1E086711FF269F1006C35A8 /* risa_2.png in Resources */,
 				F1E086511FEE742A006C35A8 /* Main.storyboard in Resources */,
 				F1E086731FF26B92006C35A8 /* Chiquitazo_fistro.png in Resources */,
+				F150A0E61FF4260C009DAFCB /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +210,8 @@
 			files = (
 				F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */,
 				F1E086801FF3C88D006C35A8 /* CompartirViewController.swift in Sources */,
+				F150A0E41FF425BC009DAFCB /* YTPlayerView.m in Sources */,
+				F150A0E81FF42883009DAFCB /* PlayerViewController.swift in Sources */,
 				F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */,
 				F1E086651FEEADB1006C35A8 /* SonidosViewController.swift in Sources */,
 				F1E086541FEE742A006C35A8 /* El_Rincon_de_Chiquito.xcdatamodeld in Sources */,
@@ -334,12 +351,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7257RHSGLV;
 				INFOPLIST_FILE = "El Rincon de Chiquito/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quijoteapps.El-Rincon-de-Chiquito";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "El Rincon de Chiquito-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,12 +369,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7257RHSGLV;
 				INFOPLIST_FILE = "El Rincon de Chiquito/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quijoteapps.El-Rincon-de-Chiquito";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "El Rincon de Chiquito-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
