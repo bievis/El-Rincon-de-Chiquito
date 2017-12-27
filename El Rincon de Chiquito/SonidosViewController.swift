@@ -11,17 +11,16 @@ import AVFoundation
 
 class SonidosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
  {
-    let sounds: [String:String] = [
-        "texto1":"http://prueba.com",
-        "texto2":"http://otraprueba.com",
-        "texto3":"http://otraprueba2.com",
-        "texto4":"http://otraprueba3.com"]
+
     var myKeys: Array<String> = []
     var localPlayer: AVQueuePlayer?
+    var menuChoice: Int?
     
     // Outlets
     
-    @IBOutlet var tabla: UITableView!
+    @IBOutlet weak var imgPrincipal: UIImageView!
+    @IBOutlet weak var tabla: UITableView!
+    @IBOutlet weak var banner: UIImageView!
     
     // Metodos del ViewController
     
@@ -32,9 +31,10 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         tabla.dataSource = self
         tabla.delegate = self
         
-        myKeys = Array(sounds.keys)
+        cargaContenidos(tipo: menuChoice!)
         
         localPlayer = AVQueuePlayer.init()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -50,20 +50,26 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
     // Metodos del TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sounds.count
+        
+        return myKeys.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let celda = UITableViewCell(style:UITableViewCellStyle.default,reuseIdentifier:"Cell")
         celda.textLabel?.text = myKeys[indexPath.row]
-        celda.imageView!.image = UIImage(named: "sonido.png")
-        
+        if menuChoice == 1 {
+            celda.imageView!.image = UIImage(named: "risa_1.png")
+        }
+        else {
+            celda.imageView!.image = UIImage(named: "risa_3.png")
+        }
         return celda
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(sounds[myKeys[indexPath.row]] ?? "out of range")
+//        print(sounds[myKeys[indexPath.row]] ?? "out of range")
         
         let urlstring = "http://radio.spainmedia.es/wp-content/uploads/2015/12/tailtoddle_lo4.mp3"
 
@@ -84,6 +90,33 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         
         self.localPlayer!.insert(playerItem, after: nil)
         self.localPlayer!.play()
+        
+    }
+    
+    func cargaContenidos(tipo: Int) {
+        
+        if menuChoice == 1 {
+            imgPrincipal.image = UIImage(named: "Chiquitazo_fistro.png")
+            
+            let sounds: [String:String] = [
+                "texto1":"http://prueba.com",
+                "texto2":"http://otraprueba.com",
+                "texto3":"http://otraprueba2.com",
+                "texto4":"http://otraprueba3.com"]
+
+            myKeys = Array(sounds.keys)
+        }
+        else {
+            imgPrincipal.image = UIImage(named: "Chiquitazo_comorrr.png")
+            
+            let chistes: [String:String] = [
+                "textoA":"http://prueba.com",
+                "textoB":"http://otraprueba.com",
+                "textoC":"http://otraprueba2.com",
+                "textoD":"http://otraprueba3.com"]
+
+            myKeys = Array(chistes.keys)
+        }
         
     }
 }
