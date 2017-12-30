@@ -22,7 +22,7 @@
                                 <rect key="frame" x="5" y="400" width="180" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Videos" backgroundImage="boton.png">
+                                <state key="normal" title="Videos" backgroundImage="chikito_icon.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="170" id="HOQ-R5-m6y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Chistes" backgroundImage="boton.png"/>
+                                <state key="normal" title="Chistes" backgroundImage="chikito_icon.png"/>
                                 <connections>
                                     <action selector="buttonChistes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSb-hW-oBv"/>
                                 </connections>
@@ -51,7 +51,7 @@
                                 <rect key="frame" x="190" y="400" width="180" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Compartir" backgroundImage="boton.png">
+                                <state key="normal" title="Compartir" backgroundImage="chikito_icon.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -65,7 +65,7 @@
                                     <constraint firstAttribute="width" constant="180" id="tq8-y8-JTo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Sonidos" backgroundImage="boton.png">
+                                <state key="normal" title="Sonidos" backgroundImage="chikito_icon.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -80,7 +80,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iot-Yf-kgP" secondAttribute="trailing" id="1uw-7J-9rz"/>
                             <constraint firstItem="RHA-1G-KLu" firstAttribute="top" secondItem="iot-Yf-kgP" secondAttribute="bottom" constant="5" id="Gs3-ao-9lA"/>
@@ -270,7 +270,7 @@
     <resources>
         <image name="Chiquitazo_fistro.png" width="251" height="240"/>
         <image name="QuijoteApps.jpg" width="1000" height="1000"/>
-        <image name="boton.png" width="180" height="95"/>
+        <image name="chikito_icon.png" width="180" height="180"/>
         <image name="foto_menu.jpg" width="617" height="346"/>
         <image name="icon-144.png" width="144" height="144"/>
     </resources>

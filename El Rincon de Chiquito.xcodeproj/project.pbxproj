@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F11CDDFE1FF808EE00AAF136 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11CDDFD1FF808EE00AAF136 /* GoogleMobileAds.framework */; };
+		F11CDE001FF81E9900AAF136 /* chikito_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F11CDDFF1FF81E9900AAF136 /* chikito_icon.png */; };
 		F150A0E41FF425BC009DAFCB /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E31FF425BC009DAFCB /* YTPlayerView.m */; };
 		F150A0E61FF4260C009DAFCB /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F150A0E51FF4260C009DAFCB /* Assets */; };
 		F150A0E81FF42883009DAFCB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E71FF42883009DAFCB /* PlayerViewController.swift */; };
@@ -36,6 +37,7 @@
 		622C5E3A6F485189B53ADC3B /* Pods-El Rincon de Chiquito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Rincon de Chiquito.release.xcconfig"; path = "Pods/Target Support Files/Pods-El Rincon de Chiquito/Pods-El Rincon de Chiquito.release.xcconfig"; sourceTree = "<group>"; };
 		EF00838DCE68F40119941853 /* Pods-El Rincon de Chiquito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Rincon de Chiquito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-El Rincon de Chiquito/Pods-El Rincon de Chiquito.debug.xcconfig"; sourceTree = "<group>"; };
 		F11CDDFD1FF808EE00AAF136 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F11CDDFF1FF81E9900AAF136 /* chikito_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chikito_icon.png; sourceTree = "<group>"; };
 		F150A0E11FF425BA009DAFCB /* El Rincon de Chiquito-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "El Rincon de Chiquito-Bridging-Header.h"; sourceTree = "<group>"; };
 		F150A0E21FF425BB009DAFCB /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		F150A0E31FF425BC009DAFCB /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				F1E086771FF3B977006C35A8 /* foto_menu.jpg */,
 				F1E0867D1FF3C829006C35A8 /* QuijoteApps.jpg */,
 				F1E0867B1FF3C80E006C35A8 /* icon-144.png */,
+				F11CDDFF1FF81E9900AAF136 /* chikito_icon.png */,
 				F1E086791FF3BCDB006C35A8 /* boton.png */,
 				F1E0866A1FEEE0F4006C35A8 /* sonido.png */,
 				F1E0866C1FF269F1006C35A8 /* risa_1.png */,
@@ -212,6 +215,7 @@
 				F1E0867C1FF3C80E006C35A8 /* icon-144.png in Resources */,
 				F1E0866B1FEEE0F5006C35A8 /* sonido.png in Resources */,
 				F1B1E7F81FF5821C0036CABF /* Chiquitazo_fistropradera.png in Resources */,
+				F11CDE001FF81E9900AAF136 /* chikito_icon.png in Resources */,
 				F1E0867A1FF3BCDB006C35A8 /* boton.png in Resources */,
 				F1E086671FEED9E8006C35A8 /* Media.xcassets in Resources */,
 				F1E086751FF3AF26006C35A8 /* Chiquitazo_comorrr.png in Resources */,
