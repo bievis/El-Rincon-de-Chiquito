@@ -135,11 +135,17 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         "taxista":"http://www.quijoteapps.com/appchiquito/CHISTES%20INDIVIDUALES/taxista.mp3",
         "teresa":"http://www.quijoteapps.com/appchiquito/CHISTES%20INDIVIDUALES/teresa.mp3" ]
 
+    let videos: [String:String] = [
+        "El enano que entra en un bar":"hH_Euim5TcM",
+        "Al ataquerrr":"Vzwc8t3DDeI",
+        "El concejal de cuenca en Madrid":"vNgo5IWDg0Q",
+        "Top 9 chistes":"Ok6q8ZmsHyc",
+        "Burro Anémico":"Cvhvw0mBWus"
+        ]
     // Outlets
     
     @IBOutlet weak var imgPrincipal: UIImageView!
     @IBOutlet weak var tabla: UITableView!
-    @IBOutlet weak var banner: UIImageView!
     
     // Metodos del ViewController
     
@@ -181,8 +187,11 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         if menuChoice == 1 {
             celda.imageView!.image = UIImage(named: "risa_1.png")
         }
-        else {
+        else if menuChoice == 2 {
             celda.imageView!.image = UIImage(named: "risa_3.png")
+        }
+        else if menuChoice == 3 {
+            celda.imageView!.image = UIImage(named: "risa_2.png")
         }
         return celda
     }
@@ -197,14 +206,34 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         if menuChoice == 1 {
             urlStr = sounds[myKeys[indexPath.row]]!
         }
-        else {
+        else if menuChoice == 2 {
             urlStr = chistes[myKeys[indexPath.row]]!
         }
-        
-        let url = URL(string: urlStr)
-//        print("the url = \(url!)")
+        else if menuChoice == 3 {
+            urlStr = videos[myKeys[indexPath.row]]!
+        }
 
-        queueMP3(url: url!)
+        if menuChoice == 3 {
+            let idVideoSeleccionado = indexPath.row
+            self.performSegue(withIdentifier: "playerVideo", sender: idVideoSeleccionado)
+        }
+        else {
+            let url = URL(string: urlStr)
+            queueMP3(url: url!)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "playerVideo" {
+            
+            let idVideoSeleccionado = sender as! Int
+            
+            let objPlayerVideo : PlayerViewController = segue.destination as! PlayerViewController
+            
+            objPlayerVideo.videoHASH = videos[myKeys[idVideoSeleccionado]]
+            
+        }
         
     }
     
@@ -227,12 +256,23 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
             imgPrincipal.image = UIImage(named: "Chiquitazo_fistro.png")
 
             myKeys = Array(sounds.keys)
+            
+            self.title = "SONIDOS"
         }
-        else {
+        else if menuChoice == 2 {
             imgPrincipal.image = UIImage(named: "Chiquitazo_comorrr.png")
             
             myKeys = Array(chistes.keys)
+            
+            self.title = "CHISTES"
         }
-        
+        else if menuChoice == 3 {
+            imgPrincipal.image = UIImage(named: "Chiquitazo_fistropradera.png")
+            
+            myKeys = Array(videos.keys)
+            
+            self.title = "VIDEOS"
+        }
+
     }
 }

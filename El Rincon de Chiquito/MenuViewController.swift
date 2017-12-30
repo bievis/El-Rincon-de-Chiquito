@@ -25,6 +25,10 @@ class MenuViewController: UIViewController {
         self.performSegue(withIdentifier: "menu2ChistesSonidos", sender: sender)
     }
     
+    @IBAction func buttonVideos(_ sender: Any) {
+        self.performSegue(withIdentifier: "menu2ChistesSonidos", sender: sender)
+    }
+    
     // Metodos del ViewController
     
     override func viewDidLoad() {
@@ -37,20 +41,23 @@ class MenuViewController: UIViewController {
         if segue.identifier == "menu2ChistesSonidos" {
             
             let boton = sender as! UIButton
-            
+            print("DIEGO")
             print(boton.titleLabel!)
             
             let objSonidosView : SonidosViewController = segue.destination as! SonidosViewController
         
             objSonidosView.menuChoice = 0
             
-            if boton.titleLabel?.text == "Chistes" {
-                objSonidosView.menuChoice = 2
-            }
-            else if boton.titleLabel?.text == "Sonidos" {
+            if boton.titleLabel?.text == "Sonidos" {
                 objSonidosView.menuChoice = 1
             }
-        
+            else if boton.titleLabel?.text == "Chistes" {
+                objSonidosView.menuChoice = 2
+            }
+            else if boton.titleLabel?.text == "Videos" {
+                objSonidosView.menuChoice = 3
+            }
+
         }
     }
     

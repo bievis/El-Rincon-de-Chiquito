@@ -10,6 +10,7 @@
 		F150A0E41FF425BC009DAFCB /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E31FF425BC009DAFCB /* YTPlayerView.m */; };
 		F150A0E61FF4260C009DAFCB /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F150A0E51FF4260C009DAFCB /* Assets */; };
 		F150A0E81FF42883009DAFCB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150A0E71FF42883009DAFCB /* PlayerViewController.swift */; };
+		F1B1E7F81FF5821C0036CABF /* Chiquitazo_fistropradera.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B1E7F71FF5821B0036CABF /* Chiquitazo_fistropradera.png */; };
 		F1E0864C1FEE742A006C35A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */; };
 		F1E0864E1FEE742A006C35A8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */; };
 		F1E086511FEE742A006C35A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0864F1FEE742A006C35A8 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		F150A0E31FF425BC009DAFCB /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		F150A0E51FF4260C009DAFCB /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		F150A0E71FF42883009DAFCB /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		F1B1E7F71FF5821B0036CABF /* Chiquitazo_fistropradera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chiquitazo_fistropradera.png; path = "../../../../Pictures/Quijote@pps/el rincon de chiquito/Chiquitazo_fistropradera.png"; sourceTree = "<group>"; };
 		F1E086481FEE742A006C35A8 /* El Rincon de Chiquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Rincon de Chiquito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E0864B1FEE742A006C35A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E0864D1FEE742A006C35A8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				F1E0866D1FF269F1006C35A8 /* risa_3.png */,
 				F1E086721FF26B91006C35A8 /* Chiquitazo_fistro.png */,
 				F1E086741FF3AF26006C35A8 /* Chiquitazo_comorrr.png */,
+				F1B1E7F71FF5821B0036CABF /* Chiquitazo_fistropradera.png */,
 			);
 			path = Imagenes;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				F1E0867E1FF3C829006C35A8 /* QuijoteApps.jpg in Resources */,
 				F1E0867C1FF3C80E006C35A8 /* icon-144.png in Resources */,
 				F1E0866B1FEEE0F5006C35A8 /* sonido.png in Resources */,
+				F1B1E7F81FF5821C0036CABF /* Chiquitazo_fistropradera.png in Resources */,
 				F1E0867A1FF3BCDB006C35A8 /* boton.png in Resources */,
 				F1E086671FEED9E8006C35A8 /* Media.xcassets in Resources */,
 				F1E086751FF3AF26006C35A8 /* Chiquitazo_comorrr.png in Resources */,

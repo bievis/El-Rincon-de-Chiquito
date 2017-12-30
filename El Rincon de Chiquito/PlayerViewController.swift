@@ -12,10 +12,14 @@ class PlayerViewController: UIViewController {
 
     @IBOutlet weak var youtubePlayer: YTPlayerView!
     
+    var videoHASH: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        youtubePlayer.load(withVideoId: "h-b6NhNKP7k")
+        self.title = "Player"
+        
+        youtubePlayer.load(withVideoId: videoHASH!)
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="I51-mT-uC6" kind="show" id="tRp-fF-Ffj"/>
+                                    <action selector="buttonVideos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ClX-BQ-5DR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4N-Xt-UxA">
@@ -110,12 +110,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-3J-IRQ" customClass="YTPlayerView">
-                                <rect key="frame" x="16" y="35" width="343" height="215"/>
+                                <rect key="frame" x="0.0" y="35" width="375" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuijoteApps.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AiO-Nr-k2T">
+                                <rect key="frame" x="51" y="343" width="273" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5np-dd-J4k">
+                                <rect key="frame" x="0.0" y="575" width="375" height="92"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Pm1-ck-acj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5np-dd-J4k" firstAttribute="trailing" secondItem="iLV-Gk-1XU" secondAttribute="trailing" id="A2Z-Ob-BDw"/>
+                            <constraint firstItem="5np-dd-J4k" firstAttribute="leading" secondItem="iLV-Gk-1XU" secondAttribute="leading" id="RXV-Rt-pdQ"/>
+                            <constraint firstItem="5np-dd-J4k" firstAttribute="bottom" secondItem="iLV-Gk-1XU" secondAttribute="bottom" id="vq8-KS-amD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iLV-Gk-1XU"/>
                     </view>
                     <connections>
@@ -124,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bv-z2-8gW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2318" y="208"/>
+            <point key="canvasLocation" x="3021.5999999999999" y="-230.73463268365819"/>
         </scene>
         <!--Compartir View Controller-->
         <scene sceneID="nZu-mu-6QR">
@@ -167,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsI-Wd-T13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="927"/>
+            <point key="canvasLocation" x="2172" y="477"/>
         </scene>
         <!--Sonidos View Controller-->
         <scene sceneID="Dku-pb-fUu">
@@ -177,8 +193,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9fZ-sg-NP7">
-                                <rect key="frame" x="0.0" y="200" width="375" height="415"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chiquitazo_fistro.png" translatesAutoresizingMaskIntoConstraints="NO" id="hSX-QY-SY2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="240"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9fZ-sg-NP7">
+                                <rect key="frame" x="0.0" y="270" width="375" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="FjX-Yc-0Jd">
@@ -191,37 +210,39 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-V7-fDj">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chiquitazo_fistro.png" translatesAutoresizingMaskIntoConstraints="NO" id="hSX-QY-SY2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fIt-dc-Rxp">
+                                <rect key="frame" x="0.0" y="575" width="375" height="92"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="2Z8-Gb-FJh"/>
+                                    <constraint firstAttribute="width" constant="375" id="yrk-jw-WCw"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lbt-V7-fDj" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="3WZ-Ta-8Ug"/>
-                            <constraint firstItem="hSX-QY-SY2" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="6rd-VI-FE6"/>
-                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="9r5-Fl-N8t"/>
-                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="top" secondItem="hSX-QY-SY2" secondAttribute="bottom" constant="8" id="BIU-9Z-qvf"/>
-                            <constraint firstItem="hSX-QY-SY2" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="F54-ss-mz2"/>
-                            <constraint firstItem="hSX-QY-SY2" firstAttribute="top" secondItem="QYp-dT-VYB" secondAttribute="top" constant="44" id="NnP-es-eZG"/>
-                            <constraint firstItem="lbt-V7-fDj" firstAttribute="top" secondItem="9fZ-sg-NP7" secondAttribute="bottom" constant="8" id="VqB-kl-urw"/>
-                            <constraint firstItem="lbt-V7-fDj" firstAttribute="bottom" secondItem="QYp-dT-VYB" secondAttribute="bottom" id="a9e-gd-4xV"/>
-                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="aeC-5u-xDu"/>
-                            <constraint firstItem="lbt-V7-fDj" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="iBz-pn-A7A"/>
+                            <constraint firstItem="hSX-QY-SY2" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="28l-Z9-Jb5"/>
+                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="bottom" secondItem="QYp-dT-VYB" secondAttribute="bottom" constant="-100" id="Mbx-l7-pTE"/>
+                            <constraint firstItem="hSX-QY-SY2" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="QgX-Lm-CI4"/>
+                            <constraint firstItem="fIt-dc-Rxp" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="RQb-fs-vki"/>
+                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="Sbq-cA-som"/>
+                            <constraint firstItem="QYp-dT-VYB" firstAttribute="trailing" secondItem="fIt-dc-Rxp" secondAttribute="trailing" id="Sdf-Q0-ZOU"/>
+                            <constraint firstItem="QYp-dT-VYB" firstAttribute="bottom" secondItem="fIt-dc-Rxp" secondAttribute="bottom" id="alS-Zr-6Lh"/>
+                            <constraint firstItem="hSX-QY-SY2" firstAttribute="top" secondItem="QYp-dT-VYB" secondAttribute="top" id="ejc-Sd-LEw"/>
+                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="mxP-nR-I55"/>
+                            <constraint firstItem="9fZ-sg-NP7" firstAttribute="top" secondItem="hSX-QY-SY2" secondAttribute="bottom" constant="10" id="zvA-F6-Jex"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QYp-dT-VYB"/>
                     </view>
                     <connections>
-                        <outlet property="banner" destination="lbt-V7-fDj" id="PCc-WA-fDh"/>
                         <outlet property="imgPrincipal" destination="hSX-QY-SY2" id="ElG-0K-71a"/>
                         <outlet property="tabla" destination="9fZ-sg-NP7" id="TiO-JX-8aH"/>
+                        <segue destination="I51-mT-uC6" kind="show" identifier="playerVideo" id="c1E-Sp-VHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkv-hz-8fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-591"/>
+            <point key="canvasLocation" x="2172" y="-230.73463268365819"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cI0-2t-Wa0">
