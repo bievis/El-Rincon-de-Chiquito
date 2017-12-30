@@ -47,11 +47,6 @@
                                     <constraint firstAttribute="height" constant="200" id="cg3-Na-MT9" userLabel="height = 300"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2z-ly-2S7">
-                                <rect key="frame" x="0.0" y="575" width="375" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMR-cO-h9L">
                                 <rect key="frame" x="190" y="400" width="180" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,6 +72,13 @@
                                     <action selector="buttonSonidos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMt-W4-uGy"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4d-Da-xt1" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="575" width="375" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="gcp-IM-ttN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -85,15 +87,17 @@
                             <constraint firstItem="iot-Yf-kgP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QHK-Vj-srO"/>
                             <constraint firstItem="l4N-Xt-UxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="SLI-1l-znl"/>
                             <constraint firstItem="iot-Yf-kgP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="f6x-f2-mcH"/>
+                            <constraint firstItem="w4d-Da-xt1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kiW-bG-Ler"/>
+                            <constraint firstItem="w4d-Da-xt1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m9Z-tD-cd7"/>
                             <constraint firstItem="l4N-Xt-UxA" firstAttribute="top" secondItem="iot-Yf-kgP" secondAttribute="bottom" constant="5" id="mH1-bW-aTR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RHA-1G-KLu" secondAttribute="trailing" constant="5" id="vo3-iv-hOV"/>
+                            <constraint firstItem="w4d-Da-xt1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xBH-tH-wA5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="kSz-Sf-iBg"/>
                     <connections>
-                        <outlet property="imgBannerPortada" destination="O2z-ly-2S7" id="mgc-5P-FPd"/>
-                        <outlet property="imgPortada" destination="iot-Yf-kgP" id="ZX7-79-JHw"/>
+                        <outlet property="banner" destination="w4d-Da-xt1" id="fOg-Fh-PSg"/>
                         <segue destination="i0J-98-BWc" kind="show" identifier="menu2ChistesSonidos" id="6px-kP-o9P"/>
                     </connections>
                 </viewController>
@@ -118,23 +122,24 @@
                                 <rect key="frame" x="51" y="343" width="273" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5np-dd-J4k">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwV-WL-LUf" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="575" width="375" height="92"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="Pm1-ck-acj"/>
+                                    <constraint firstAttribute="height" constant="92" id="s6Y-ZV-WEe"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5np-dd-J4k" firstAttribute="trailing" secondItem="iLV-Gk-1XU" secondAttribute="trailing" id="A2Z-Ob-BDw"/>
-                            <constraint firstItem="5np-dd-J4k" firstAttribute="leading" secondItem="iLV-Gk-1XU" secondAttribute="leading" id="RXV-Rt-pdQ"/>
-                            <constraint firstItem="5np-dd-J4k" firstAttribute="bottom" secondItem="iLV-Gk-1XU" secondAttribute="bottom" id="vq8-KS-amD"/>
+                            <constraint firstItem="hwV-WL-LUf" firstAttribute="leading" secondItem="iLV-Gk-1XU" secondAttribute="leading" id="HKT-1q-tSk"/>
+                            <constraint firstItem="hwV-WL-LUf" firstAttribute="trailing" secondItem="iLV-Gk-1XU" secondAttribute="trailing" id="giC-JM-rvL"/>
+                            <constraint firstItem="iLV-Gk-1XU" firstAttribute="bottom" secondItem="hwV-WL-LUf" secondAttribute="bottom" id="vcx-Rc-tDO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iLV-Gk-1XU"/>
                     </view>
                     <connections>
+                        <outlet property="banner" destination="hwV-WL-LUf" id="ibx-r5-jHZ"/>
                         <outlet property="youtubePlayer" destination="PtU-3J-IRQ" id="h6V-pQ-wfd"/>
                     </connections>
                 </viewController>
@@ -210,31 +215,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fIt-dc-Rxp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-E2-E5I" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="575" width="375" height="92"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="2Z8-Gb-FJh"/>
-                                    <constraint firstAttribute="width" constant="375" id="yrk-jw-WCw"/>
+                                    <constraint firstAttribute="height" constant="92" id="wN1-sT-1cF"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hSX-QY-SY2" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="28l-Z9-Jb5"/>
                             <constraint firstItem="9fZ-sg-NP7" firstAttribute="bottom" secondItem="QYp-dT-VYB" secondAttribute="bottom" constant="-100" id="Mbx-l7-pTE"/>
+                            <constraint firstItem="QYp-dT-VYB" firstAttribute="bottom" secondItem="aNU-E2-E5I" secondAttribute="bottom" id="P2e-bK-FLF"/>
                             <constraint firstItem="hSX-QY-SY2" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="QgX-Lm-CI4"/>
-                            <constraint firstItem="fIt-dc-Rxp" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="RQb-fs-vki"/>
                             <constraint firstItem="9fZ-sg-NP7" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="Sbq-cA-som"/>
-                            <constraint firstItem="QYp-dT-VYB" firstAttribute="trailing" secondItem="fIt-dc-Rxp" secondAttribute="trailing" id="Sdf-Q0-ZOU"/>
-                            <constraint firstItem="QYp-dT-VYB" firstAttribute="bottom" secondItem="fIt-dc-Rxp" secondAttribute="bottom" id="alS-Zr-6Lh"/>
+                            <constraint firstItem="aNU-E2-E5I" firstAttribute="leading" secondItem="QYp-dT-VYB" secondAttribute="leading" id="XCy-dA-JX1"/>
                             <constraint firstItem="hSX-QY-SY2" firstAttribute="top" secondItem="QYp-dT-VYB" secondAttribute="top" id="ejc-Sd-LEw"/>
+                            <constraint firstItem="aNU-E2-E5I" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="h43-Fv-xnl"/>
                             <constraint firstItem="9fZ-sg-NP7" firstAttribute="trailing" secondItem="QYp-dT-VYB" secondAttribute="trailing" id="mxP-nR-I55"/>
                             <constraint firstItem="9fZ-sg-NP7" firstAttribute="top" secondItem="hSX-QY-SY2" secondAttribute="bottom" constant="10" id="zvA-F6-Jex"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QYp-dT-VYB"/>
                     </view>
                     <connections>
+                        <outlet property="banner" destination="aNU-E2-E5I" id="f9i-GU-6NC"/>
                         <outlet property="imgPrincipal" destination="hSX-QY-SY2" id="ElG-0K-71a"/>
                         <outlet property="tabla" destination="9fZ-sg-NP7" id="TiO-JX-8aH"/>
                         <segue destination="I51-mT-uC6" kind="show" identifier="playerVideo" id="c1E-Sp-VHh"/>

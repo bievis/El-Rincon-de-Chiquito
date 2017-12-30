@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class PlayerViewController: UIViewController {
 
     @IBOutlet weak var youtubePlayer: YTPlayerView!
+    @IBOutlet weak var banner: GADBannerView!
     
     var videoHASH: String?
     
@@ -18,6 +20,12 @@ class PlayerViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = "Player"
+        
+        self.banner.adUnitID = "ca-app-pub-9225943803373012/8313481820"
+        self.banner.rootViewController = self
+        let request = GADRequest()
+        request.testDevices?.append(kGADSimulatorID)
+        self.banner.load(request)
         
         youtubePlayer.load(withVideoId: videoHASH!)
     }

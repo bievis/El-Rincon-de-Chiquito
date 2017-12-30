@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MenuViewController: UIViewController {
 
     // Outlets
     
-    @IBOutlet weak var imgPortada: UIImageView!
-    @IBOutlet weak var imgBannerPortada: UIImageView!
+    @IBOutlet weak var banner: GADBannerView!
     
     // Actions
     
@@ -33,7 +33,14 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Para que aparezca la pantalla de inicio durante 3 segundos al menos
+        self.banner.adUnitID = "ca-app-pub-9225943803373012/8313481820"
+        self.banner.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        self.banner.load(request)
+        
+//        sleep(3)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,8 +48,6 @@ class MenuViewController: UIViewController {
         if segue.identifier == "menu2ChistesSonidos" {
             
             let boton = sender as! UIButton
-            print("DIEGO")
-            print(boton.titleLabel!)
             
             let objSonidosView : SonidosViewController = segue.destination as! SonidosViewController
         

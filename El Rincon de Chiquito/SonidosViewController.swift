@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
 class SonidosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
  {
@@ -15,7 +16,11 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
     var myKeys: Array<String> = []
     var localPlayer: AVQueuePlayer?
     var menuChoice: Int?
-    
+    static var interstitial: GADInterstitial?
+    static var interstitialRequest: GADRequest?
+    static var contador: Int = 0
+    static var nextJump: Int = 0
+
     let sounds: [String:String] = [
         "ChiquitoJapyNeuYeissss":"http://www.quijoteapps.com/appchiquito/SONIDOS/ChiquitoJapyNeuYeissss.mp3",
         "acomisarida":"http://www.quijoteapps.com/appchiquito/SONIDOS/acomisarida.mp3",
@@ -140,12 +145,33 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         "Al ataquerrr":"Vzwc8t3DDeI",
         "El concejal de cuenca en Madrid":"vNgo5IWDg0Q",
         "Top 9 chistes":"Ok6q8ZmsHyc",
-        "Burro Anémico":"Cvhvw0mBWus"
+        "Burro Anémico":"Cvhvw0mBWus",
+        "La mejor recopilacion 1 de 3":"JoaG7EYfTNA",
+        "La mejor recopilacion 2 de 3":"JnTdJcwotuo",
+        "La mejor recopilacion 3 de 3":"rVLH3YRjmRI",
+        "En su salsa":"XoiowO_cPu0",
+        "El pollo":"jDonMMtclPQ",
+        "Manicomio":"rgKZs1yIHMI",
+        "Paso de cebra":"5pXIcSqUtgM",
+        "La viuda":"6y0hjtChemQ",
+        "Mensaje de su majestad":"h067YdsqoU8",
+        "Mensaje de Navidad":"stOvzrLlDwM",
+        "Usté se mea":"vMdMYHFI4fQ",
+        "Te viá cortá el fistro":"HnHul_X7PsU",
+        "Ha ofendido el cuerpo humano":"nocfBkE_Dqo",
+        "Cocinero":"vmNhxAWfGCI",
+        "Doctor Grijando":"szykKkRzhBw",
+        "La enana":"LsJf124KoYI",
+        "El legionario":"E7EuqFmycis",
+        "Debo mucho dinero":"8RBt4njzx_8",
+        "El motorista":"ndLk1hQkeOI",
+        "El loro":"a3iYGPBMJcg"
         ]
     // Outlets
     
     @IBOutlet weak var imgPrincipal: UIImageView!
     @IBOutlet weak var tabla: UITableView!
+    @IBOutlet weak var banner: GADBannerView!
     
     // Metodos del ViewController
     
@@ -156,6 +182,10 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         tabla.dataSource = self
         tabla.delegate = self
         
+        loadBanner()
+        
+        loadAndShowIntersticial()
+        
         cargaContenidos(tipo: menuChoice!)
         
         localPlayer = AVQueuePlayer.init()
@@ -165,6 +195,7 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -275,4 +306,45 @@ class SonidosViewController: UIViewController, UITableViewDataSource, UITableVie
         }
 
     }
+    
+    func loadBanner() {
+        
+        self.banner.adUnitID = "ca-app-pub-9225943803373012/9614599981"
+        self.banner.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        self.banner.load(request)
+        
+    }
+    
+    func loadAndShowIntersticial() {
+        
+        SonidosViewController.contador += 1
+        
+        print("contador = \(SonidosViewController.contador)")
+        
+        if SonidosViewController.contador == 1
+        {
+            SonidosViewController.interstitial = GADInterstitial(adUnitID: "ca-app-pub-9225943803373012/7190604863")
+            SonidosViewController.interstitialRequest = GADRequest()
+//            self.interstitialRequest?.testDevices = [ kGADSimulatorID ];
+            SonidosViewController.interstitial?.load(SonidosViewController.interstitialRequest)
+            
+            SonidosViewController.nextJump = 2
+        }
+        else if SonidosViewController.contador == SonidosViewController.nextJump
+        {
+            if (SonidosViewController.interstitial?.isReady)!
+            {
+                SonidosViewController.interstitial?.present(fromRootViewController: self)
+            }
+            
+            SonidosViewController.interstitial = GADInterstitial(adUnitID: "ca-app-pub-9225943803373012/7190604863")
+            SonidosViewController.interstitialRequest = GADRequest()
+            SonidosViewController.interstitial?.load(SonidosViewController.interstitialRequest)
+            
+            SonidosViewController.nextJump *= 2
+        }
+    }
+
 }
